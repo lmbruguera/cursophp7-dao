@@ -39,11 +39,21 @@ require_once("config.php");
 
 // echo $aluno;
 
+
+//////////////////alterar um usuario
+// $usuario = new Usuario();
+
+// $usuario->loadById(23);
+
+// $usuario->update("professor","senha");
+
+// echo $usuario;
+
 $usuario = new Usuario();
 
 $usuario->loadById(23);
 
-$usuario->update("professor","senha");
+$usuario->delete();
 
 echo $usuario;
 
