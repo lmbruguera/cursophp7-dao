@@ -23,9 +23,29 @@ require_once("config.php");
 
 
 ////carrega um usuario usando login e senha
+// $usuario = new Usuario();
+// $usuario->login("lucas", "osososos");
+
+// echo $usuario;
+
+
+/////////////////criando um novo usuario
+// $aluno = new Usuario();
+
+// $aluno->setDeslogin("aluno");
+// $aluno->setDessenha("qwert");
+
+// $aluno->insert();
+
+// echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("lucas", "osososos");
+
+$usuario->loadById(23);
+
+$usuario->update("professor","senha");
 
 echo $usuario;
+
 
 ?>
